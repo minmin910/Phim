@@ -1,4 +1,4 @@
-import { NgModule } from "@angular/core";
+import { NgModule, Component } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
 import { FormComponent } from "./form/form.component";
 import { FormLoginComponent } from "./form/form-login/form-login.component";
@@ -9,17 +9,24 @@ const routes: Routes = [
     path: "",
     component: FormComponent,
     children: [
-      {
-        path: "login",
-        component: FormLoginComponent
-      },
-      {
-        path: "register",
-        component: FormRegisterComponent
-      }
+      // {
+      //   path: "login",
+      //   component: FormLoginComponent
+      // },
+      // {
+      //   path: "register",
+      //   component: FormRegisterComponent
+      // }
     ]
   },
-  
+  {
+    path: "login",
+    component: FormComponent
+  },
+  {
+    path: "register",
+    component: FormRegisterComponent
+  }
 ];
 
 @NgModule({

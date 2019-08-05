@@ -1,12 +1,16 @@
 <div class="form-login">
     <h1>Log in</h1>
-    <form #frmDangNhap="ngForm" (ngSubmit)="dangNhap(frmDangNhap.value)">
+    <form #frmLogin="ngForm" (ngSubmit)="login(frmLogin.value)">
         <div class="form-group">
-            <input type="text" class="form-control" name="taiKhoan" id="" placeholder="User name" ngModel>
-            <input type="password" class="form-control" name="matKhau" id="" placeholder="Password" ngModel>
-            <button type="submit" class="btn btn-danger btn-login">Log In</button>
-            <a class="text-right text-decoration-none" href="">Forget password?</a>
+            <input type="text" class="form-control" name="email" id="" placeholder="User name" ngModel>
         </div>
+        <div class="form-group">
+            <input type="password" class="form-control" name="password" id="" placeholder="Password" ngModel>
+        </div>
+        <div class="form-group">
+            <button type="submit" class="btn btn-danger btn-login">Log In</button>
+        </div>
+        <a class="text-right text-decoration-none" href="">Forget password?</a>
     </form>
     <span class="text-secondary">or log in with </span>
     <div class="btn-social-group row">

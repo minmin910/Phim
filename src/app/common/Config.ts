@@ -1,7 +1,8 @@
-export const domain ='http://movie0706.cybersoft.edu.vn/api/';
+export const domain ='https://node-clobend.herokuapp.com';
 export const accessToken ='accessToken';
 export const userLogin ='userLogin';
 
-export enum titleThongBao {thongBao='Thông Báo'};
-export enum iconthongBao{thanhCong ='success',thatBai='error', canhBao='warning'};
-export enum thongBaoDangNhap{thanhCong ='Đăng nhập thành công', thatBai='Đăng Nhập Thất Bại'}
+
+export enum iconAlert{success ='success',fail='error', warning='warning'};
+export enum LoginAlert{success ='Login successful', fail='Login fail'}
+export enum RegisterAlert{success ='Registration completed successfully', fail='Something wrong !'}
