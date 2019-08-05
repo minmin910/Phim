@@ -1,0 +1,22 @@
+<div class="form-login">
+    <h1>Log in</h1>
+    <form #frmDangNhap="ngForm" (ngSubmit)="dangNhap(frmDangNhap.value)">
+        <div class="form-group">
+            <input type="text" class="form-control" name="taiKhoan" id="" placeholder="User name" ngModel>
+            <input type="password" class="form-control" name="matKhau" id="" placeholder="Password" ngModel>
+            <button type="submit" class="btn btn-danger btn-login">Log In</button>
+            <a class="text-right text-decoration-none" href="">Forget password?</a>
+        </div>
+    </form>
+    <span class="text-secondary">or log in with </span>
+    <div class="btn-social-group row">
+        <div class="col-md-6 col-lg-6 col-xs-6 col-sm-12">
+            <button class="btn btn-gg "> <i class="fa fa-google"></i>Google</button>
+        </div>
+        <div class="col-md-6 col-lg-6 col-xs-6 col-sm-12">
+            <button class="btn btn-fb "> <i class="fa fa-facebook-square"></i> Facebook</button>
+        </div>
+    </div>
+    <a class="text-decoration-none" href="">New to Ko-fi? Sign up here</a>
+
+</div>

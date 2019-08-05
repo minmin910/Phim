@@ -1,0 +1,163 @@
+.header {
+  .header__content {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    font-family: "Quicksand", sans-serif;
+    box-shadow: 0 5px 10px rgba(0, 9, 128, 0.035),
+      0 7px 18px rgba(0, 9, 128, 0.05);
+
+    //navbar
+    .kofiNav {
+      width: 80%;
+      margin-left: auto;
+      .navbar-brand {
+        i {
+          font-size: 30px;
+          color: white;
+          padding: 7px 8px;
+          background-color: #29abe0;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        span {
+          font-weight: 500;
+          font-size: 25px;
+        }
+      }
+      .kofi-menu {
+        .navbar-nav {
+          margin-left: auto;
+          .nav-item {
+            .nav-link {
+              white-space: nowrap;
+              font-size: 16px;
+              font-weight: 500;
+              color: black;
+              margin-right: 16px;
+              &:hover {
+                color: #ff5f5f;
+              }
+            }
+          }
+        }
+      }
+      .header-btn {
+        .btn {
+          margin-right: auto;
+          margin-top: auto;
+          .header-btn__link {
+            color: #ff5f5f;
+            white-space: nowrap;
+          }
+          background-color: #ffeeee;
+          border-radius: 7%;
+          &:hover {
+            background-color: #ffeef4e3;
+            box-shadow: 0.5px -1px 1px #ff5f5f;
+          }
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+    }
+    //button
+
+    @media screen and(max-width:768px) {
+      .kofiNav {
+        width: 100%;
+        margin: auto;
+        .kofi-menu {
+          .navbar-nav {
+            .nav-item {
+              .nav-link {
+                margin-right: 5px;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    @media screen and(max-width:575px) {
+      .kofiNav {
+        .navbar-toggler {
+          height: 40px;
+          width: 40px;
+          border: none;
+          order: 3;
+          position: fixed;
+          top: 2.5%;
+          right: 3%;
+          &:focus {
+            border: none;
+          }
+          //Draw line for button-toggle
+          .toggle-btn__line {
+            position: absolute;
+            left: 20%;
+            height: 3px;
+            width: 70%;
+            background-color: grey;
+            transition: 0.25s ease-out;
+          }
+          .top {
+            transform: rotate(180deg);
+            top: 20%;
+          }
+          .middle {
+            transform: rotate(180deg);
+            top: 40%;
+          }
+          .bottom {
+            transform: rotate(180deg) !important;
+            top: 60%;
+          }
+        }
+        //cusomize button-toggle
+        .close {
+          .top {
+            transform: rotate(-45deg);
+            top: 48%;
+          }
+          .middle,
+          .bottom {
+            transform: rotate(45deg) !important;
+            top: 48% !important;
+          }
+        }
+        .kofi-menu {
+          .navbar-nav {
+            .nav-item {
+              .nav-link {
+                &:hover {
+                  background-color: #f6f7f8;
+                }
+              }
+            }
+          }
+        }
+        .header-btn {
+          margin-left: auto;
+          margin-right: 20px;
+          order: 2;
+          position: fixed;
+          top: 2.5%;
+          right: 12%;
+        }
+      }
+    }
+
+    @media screen and(max-width:300px) {
+      .kofiNav {
+        .header-btn {
+          display: none;
+        }
+      }
+    }
+  }
+}

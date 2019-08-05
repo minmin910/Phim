@@ -1,0 +1,42 @@
+<div class="header">
+    <div class="header__content">
+        <nav class="navbar navbar-expand-sm navbar-light kofiNav">
+            <a class="navbar-brand" href="#">
+                <i class="fa fa-coffee"></i> <span>Ko-fi</span>
+            </a>
+            <div id="navbar-toggler-id" (click)="rotateToggle()" [ngClass]="status_toggle ? 'close' : ''"
+                class="navbar-toggler toggle-btn " type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="toggle-btn__line top"></span>
+                <span class="toggle-btn__line middle"></span>
+                <span class="toggle-btn__line bottom"></span>
+        </div>
+
+            <div class="collapse navbar-collapse kofi-menu" id="collapsibleNavId">
+                <ul class="navbar-nav  mt-2 mt-lg-0 ">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Login </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Feature</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Gold</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blog</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-btn">
+                <button class=" btn">
+                    <a class="header-btn__link text-decoration-none" href="#">Start a Page</a>
+                </button>
+            </div>
+        </nav>
+        <!-- btn start pages -->
+    </div>
+</div>
